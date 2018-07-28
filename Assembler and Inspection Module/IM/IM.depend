@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1510132491 source:c:\users\sidharth thomas\desktop\final cmp\im\main.cpp
+	<iostream>
+	<bitset>
+	<fstream>
+	<cstdio>
+	<cstring>
+	<cstdlib>
+	<cctype>
+
