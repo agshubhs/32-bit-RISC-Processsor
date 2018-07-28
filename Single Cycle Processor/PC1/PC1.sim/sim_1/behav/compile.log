@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/B. Tech II year/CSN_221/Project/32-bit-MIPS-Processor-master/Final program/PC1/PC1.srcs/sources_1/new/program_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module program_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/B. Tech II year/CSN_221/Project/32-bit-MIPS-Processor-master/Final program/PC1/PC1.srcs/sim_1/new/program_counter_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module program_counter_sim
+WARNING: [VRFC 10-986] literal value truncated to fit in 8 bits [E:/B. Tech II year/CSN_221/Project/32-bit-MIPS-Processor-master/Final program/PC1/PC1.srcs/sim_1/new/program_counter_sim.v:45]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/B. Tech II year/CSN_221/Project/32-bit-MIPS-Processor-master/Final program/PC1/PC1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

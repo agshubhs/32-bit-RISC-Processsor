@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../../reg_file/reg_file.srcs/sources_1/new/reg_file.v"
+verilog xil_defaultlib  "../../../../control_uni/control_uni.srcs/sources_1/new/control_unit.v"
+verilog xil_defaultlib  "../../../../ALUCU1/ALUCU1.srcs/sources_1/new/ALU_CU.v"
+verilog xil_defaultlib  "../../../../ALU1/ALU1.srcs/sources_1/new/Alu.v"
+verilog xil_defaultlib  "../../../../PC1/PC1.srcs/sources_1/new/program_counter.v"
+verilog xil_defaultlib  "../../../processor.srcs/sources_1/new/combine.v"
+verilog xil_defaultlib  "../../../../Data Memory/data.srcs/sources_1/new/data.v"
+verilog xil_defaultlib  "../../../../../../Final program/processor/processor.srcs/sources_1/new/instr_mem.v"
+verilog xil_defaultlib  "../../../processor.srcs/sim_1/new/final.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
