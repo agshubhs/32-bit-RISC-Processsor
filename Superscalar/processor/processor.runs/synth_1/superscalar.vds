@@ -1,0 +1,448 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Nov 08 16:11:43 2017
+# Process ID: 17288
+# Current directory: D:/Final program/processor/processor.runs/synth_1
+# Command line: vivado.exe -log superscalar.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source superscalar.tcl
+# Log file: D:/Final program/processor/processor.runs/synth_1/superscalar.vds
+# Journal file: D:/Final program/processor/processor.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source superscalar.tcl -notrace
+Command: synth_design -top superscalar -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18920 
+WARNING: [Synth 8-2611] redeclaration of ansi port RegDst is not allowed [D:/Final program/control_uni/control_uni.srcs/sources_1/new/control_unit.v:34]
+WARNING: [Synth 8-2611] redeclaration of ansi port AluSrc is not allowed [D:/Final program/control_uni/control_uni.srcs/sources_1/new/control_unit.v:34]
+WARNING: [Synth 8-2611] redeclaration of ansi port MemtoReg is not allowed [D:/Final program/control_uni/control_uni.srcs/sources_1/new/control_unit.v:34]
+WARNING: [Synth 8-2611] redeclaration of ansi port RegWrite is not allowed [D:/Final program/control_uni/control_uni.srcs/sources_1/new/control_unit.v:34]
+WARNING: [Synth 8-2611] redeclaration of ansi port MemRead is not allowed [D:/Final program/control_uni/control_uni.srcs/sources_1/new/control_unit.v:34]
+WARNING: [Synth 8-2611] redeclaration of ansi port MemWrite is not allowed [D:/Final program/control_uni/control_uni.srcs/sources_1/new/control_unit.v:34]
+WARNING: [Synth 8-2611] redeclaration of ansi port Jump is not allowed [D:/Final program/control_uni/control_uni.srcs/sources_1/new/control_unit.v:34]
+WARNING: [Synth 8-2611] redeclaration of ansi port Branch is not allowed [D:/Final program/control_uni/control_uni.srcs/sources_1/new/control_unit.v:34]
+WARNING: [Synth 8-1102] /* in comment [D:/Final program/processor/processor.srcs/sources_1/new/superscalar.v:69]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:33 . Memory (MB): peak = 292.344 ; gain = 82.383
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'superscalar' [D:/Final program/processor/processor.srcs/sources_1/new/superscalar.v:23]
+INFO: [Synth 8-638] synthesizing module 'instr_mem' [D:/Final program/processor/processor.srcs/sources_1/new/instr_mem.v:21]
+INFO: [Synth 8-256] done synthesizing module 'instr_mem' (1#1) [D:/Final program/processor/processor.srcs/sources_1/new/instr_mem.v:21]
+INFO: [Synth 8-638] synthesizing module 'combine' [D:/Final program/processor/processor.srcs/sources_1/new/combine.v:23]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [D:/Final program/control_uni/control_uni.srcs/sources_1/new/control_unit.v:23]
+WARNING: [Synth 8-151] case item 6'b000010 is unreachable [D:/Final program/control_uni/control_uni.srcs/sources_1/new/control_unit.v:38]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (2#1) [D:/Final program/control_uni/control_uni.srcs/sources_1/new/control_unit.v:23]
+WARNING: [Synth 8-350] instance 'control_unit2' of module 'control_unit' requires 9 connections, but only 7 given [D:/Final program/processor/processor.srcs/sources_1/new/combine.v:101]
+INFO: [Synth 8-638] synthesizing module 'ALU_CU' [D:/Final program/ALUCU1/ALUCU1.srcs/sources_1/new/ALU_CU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ALU_CU' (3#1) [D:/Final program/ALUCU1/ALUCU1.srcs/sources_1/new/ALU_CU.v:23]
+INFO: [Synth 8-638] synthesizing module 'reg_file' [D:/Final program/reg_file/reg_file.srcs/sources_1/new/reg_file.v:22]
+WARNING: [Synth 8-4767] Trying to implement RAM 'Registers_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "Registers_reg" dissolved into registers
+INFO: [Synth 8-256] done synthesizing module 'reg_file' (4#1) [D:/Final program/reg_file/reg_file.srcs/sources_1/new/reg_file.v:22]
+INFO: [Synth 8-638] synthesizing module 'Alu' [D:/Final program/ALU1/ALU1.srcs/sources_1/new/Alu.v:23]
+WARNING: [Synth 8-567] referenced signal 'S' should be on the sensitivity list [D:/Final program/ALU1/ALU1.srcs/sources_1/new/Alu.v:36]
+INFO: [Synth 8-256] done synthesizing module 'Alu' (5#1) [D:/Final program/ALU1/ALU1.srcs/sources_1/new/Alu.v:23]
+INFO: [Synth 8-638] synthesizing module 'data' [D:/Final program/Data Memory/data.srcs/sources_1/new/data.v:24]
+WARNING: [Synth 8-4767] Trying to implement RAM 'mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "mem_reg" dissolved into registers
+INFO: [Synth 8-256] done synthesizing module 'data' (6#1) [D:/Final program/Data Memory/data.srcs/sources_1/new/data.v:24]
+INFO: [Synth 8-256] done synthesizing module 'combine' (7#1) [D:/Final program/processor/processor.srcs/sources_1/new/combine.v:23]
+INFO: [Synth 8-256] done synthesizing module 'superscalar' (8#1) [D:/Final program/processor/processor.srcs/sources_1/new/superscalar.v:23]
+WARNING: [Synth 8-3331] design data has unconnected port adres1[31]
+WARNING: [Synth 8-3331] design data has unconnected port adres1[30]
+WARNING: [Synth 8-3331] design data has unconnected port adres1[29]
+WARNING: [Synth 8-3331] design data has unconnected port adres1[28]
+WARNING: [Synth 8-3331] design data has unconnected port adres1[27]
+WARNING: [Synth 8-3331] design data has unconnected port adres1[26]
+WARNING: [Synth 8-3331] design data has unconnected port adres1[25]
+WARNING: [Synth 8-3331] design data has unconnected port adres1[24]
+WARNING: [Synth 8-3331] design data has unconnected port adres1[23]
+WARNING: [Synth 8-3331] design data has unconnected port adres1[22]
+WARNING: [Synth 8-3331] design data has unconnected port adres1[21]
+WARNING: [Synth 8-3331] design data has unconnected port adres1[20]
+WARNING: [Synth 8-3331] design data has unconnected port adres1[19]
+WARNING: [Synth 8-3331] design data has unconnected port adres1[18]
+WARNING: [Synth 8-3331] design data has unconnected port adres1[17]
+WARNING: [Synth 8-3331] design data has unconnected port adres1[16]
+WARNING: [Synth 8-3331] design data has unconnected port adres1[15]
+WARNING: [Synth 8-3331] design data has unconnected port adres1[14]
+WARNING: [Synth 8-3331] design data has unconnected port adres1[13]
+WARNING: [Synth 8-3331] design data has unconnected port adres1[12]
+WARNING: [Synth 8-3331] design data has unconnected port adres1[11]
+WARNING: [Synth 8-3331] design data has unconnected port adres1[10]
+WARNING: [Synth 8-3331] design data has unconnected port adres1[9]
+WARNING: [Synth 8-3331] design data has unconnected port adres1[8]
+WARNING: [Synth 8-3331] design data has unconnected port adres2[31]
+WARNING: [Synth 8-3331] design data has unconnected port adres2[30]
+WARNING: [Synth 8-3331] design data has unconnected port adres2[29]
+WARNING: [Synth 8-3331] design data has unconnected port adres2[28]
+WARNING: [Synth 8-3331] design data has unconnected port adres2[27]
+WARNING: [Synth 8-3331] design data has unconnected port adres2[26]
+WARNING: [Synth 8-3331] design data has unconnected port adres2[25]
+WARNING: [Synth 8-3331] design data has unconnected port adres2[24]
+WARNING: [Synth 8-3331] design data has unconnected port adres2[23]
+WARNING: [Synth 8-3331] design data has unconnected port adres2[22]
+WARNING: [Synth 8-3331] design data has unconnected port adres2[21]
+WARNING: [Synth 8-3331] design data has unconnected port adres2[20]
+WARNING: [Synth 8-3331] design data has unconnected port adres2[19]
+WARNING: [Synth 8-3331] design data has unconnected port adres2[18]
+WARNING: [Synth 8-3331] design data has unconnected port adres2[17]
+WARNING: [Synth 8-3331] design data has unconnected port adres2[16]
+WARNING: [Synth 8-3331] design data has unconnected port adres2[15]
+WARNING: [Synth 8-3331] design data has unconnected port adres2[14]
+WARNING: [Synth 8-3331] design data has unconnected port adres2[13]
+WARNING: [Synth 8-3331] design data has unconnected port adres2[12]
+WARNING: [Synth 8-3331] design data has unconnected port adres2[11]
+WARNING: [Synth 8-3331] design data has unconnected port adres2[10]
+WARNING: [Synth 8-3331] design data has unconnected port adres2[9]
+WARNING: [Synth 8-3331] design data has unconnected port adres2[8]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr1[1]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr1[0]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr2[1]
+WARNING: [Synth 8-3331] design instr_mem has unconnected port addr2[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:37 . Memory (MB): peak = 346.262 ; gain = 136.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:38 . Memory (MB): peak = 346.262 ; gain = 136.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:39 . Memory (MB): peak = 346.262 ; gain = 136.301
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "mem" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mem" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5587] ROM size for "RegWrite" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "MemRead" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Jump" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "alu_cu" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:01:12 . Memory (MB): peak = 509.422 ; gain = 299.461
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |data__GB0        |           1|     31113|
+|2     |data__GB1        |           1|      9517|
+|3     |data__GB2        |           1|     10595|
+|4     |data__GB3        |           1|     13414|
+|5     |data__GB4        |           1|     33641|
+|6     |data__GB5        |           1|      9229|
+|7     |data__GB6        |           1|     26817|
+|8     |data__GB7        |           1|     33528|
+|9     |combine__GC0     |           1|     19765|
+|10    |superscalar__GC0 |           1|       180|
++------+-----------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 4     
++---XORs : 
+	   2 Input     32 Bit         XORs := 4     
++---Registers : 
+	               32 Bit    Registers := 292   
++---Muxes : 
+	   2 Input   8192 Bit        Muxes := 1     
+	   2 Input   1024 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 34    
+	   7 Input     32 Bit        Muxes := 2     
+	   8 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	  17 Input      4 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 2     
+	  16 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module superscalar 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module data 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 258   
++---Muxes : 
+	   2 Input   8192 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 17    
+Module control_unit__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      1 Bit        Muxes := 8     
+Module control_unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      1 Bit        Muxes := 8     
+Module ALU_CU__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	  17 Input      4 Bit        Muxes := 1     
+Module ALU_CU 
+Detailed RTL Component Info : 
++---Muxes : 
+	  17 Input      4 Bit        Muxes := 1     
+Module reg_file 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input   1024 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 11    
+Module Alu__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
++---Muxes : 
+	   7 Input     32 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+Module Alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
++---Muxes : 
+	   7 Input     32 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+Module combine 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      5 Bit        Muxes := 2     
+Module instr_mem 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:31 ; elapsed = 00:04:50 . Memory (MB): peak = 697.168 ; gain = 487.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |data__GB0        |           1|     27024|
+|2     |data__GB1        |           1|     25555|
+|3     |data__GB2        |           1|      4420|
+|4     |data__GB3        |           1|      3162|
+|5     |data__GB4        |           1|      9406|
+|6     |data__GB5        |           1|      1510|
+|7     |data__GB6        |           1|      7642|
+|8     |data__GB7        |           1|      9758|
+|9     |combine__GC0     |           1|     14335|
+|10    |superscalar__GC0 |           1|        94|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:32 ; elapsed = 00:04:51 . Memory (MB): peak = 697.168 ; gain = 487.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |data__GB0        |           1|     27024|
+|2     |data__GB1        |           1|     25555|
+|3     |data__GB2        |           1|      4420|
+|4     |data__GB3        |           1|      3162|
+|5     |data__GB4        |           1|      9406|
+|6     |data__GB5        |           1|      1510|
+|7     |data__GB6        |           1|      7642|
+|8     |data__GB7        |           1|      9758|
+|9     |combine__GC0     |           1|     14335|
+|10    |superscalar__GC0 |           1|        94|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:46 ; elapsed = 00:05:07 . Memory (MB): peak = 700.961 ; gain = 491.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |data__GB0     |           1|     11180|
+|2     |data__GB1     |           1|      8356|
+|3     |combine__GC0  |           1|      6346|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pc_current2_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pc_current2_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (pc_current2_reg[1]) is unused and will be removed from module superscalar.
+WARNING: [Synth 8-3332] Sequential element (pc_current2_reg[0]) is unused and will be removed from module superscalar.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:56 ; elapsed = 00:06:18 . Memory (MB): peak = 700.961 ; gain = 491.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:57 ; elapsed = 00:06:18 . Memory (MB): peak = 700.961 ; gain = 491.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:00 ; elapsed = 00:06:22 . Memory (MB): peak = 700.961 ; gain = 491.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:02 ; elapsed = 00:06:24 . Memory (MB): peak = 700.961 ; gain = 491.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:10 ; elapsed = 00:06:32 . Memory (MB): peak = 700.961 ; gain = 491.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:10 ; elapsed = 00:06:32 . Memory (MB): peak = 700.961 ; gain = 491.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    72|
+|3     |LUT1   |    60|
+|4     |LUT2   |   272|
+|5     |LUT3   |  4514|
+|6     |LUT4   |  1643|
+|7     |LUT5   | 10959|
+|8     |LUT6   | 14391|
+|9     |MUXF7  |  2765|
+|10    |MUXF8  |  1216|
+|11    |FDRE   |  9342|
+|12    |IBUF   |     1|
+|13    |OBUF   |   196|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------+---------+------+
+|      |Instance     |Module   |Cells |
++------+-------------+---------+------+
+|1     |top          |         | 45432|
+|2     |  processor  |combine  | 45088|
+|3     |    Alu1     |Alu      |    94|
+|4     |    Alu2     |Alu_0    |    66|
+|5     |    data     |data     | 17656|
+|6     |    reg_file |reg_file | 27272|
++------+-------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:10 ; elapsed = 00:06:32 . Memory (MB): peak = 700.961 ; gain = 491.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 68 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:06 ; elapsed = 00:06:30 . Memory (MB): peak = 700.961 ; gain = 491.000
+Synthesis Optimization Complete : Time (s): cpu = 00:04:10 ; elapsed = 00:06:45 . Memory (MB): peak = 700.961 ; gain = 491.000
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 73 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 68 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:22 ; elapsed = 00:06:56 . Memory (MB): peak = 700.961 ; gain = 491.000
+INFO: [Common 17-1381] The checkpoint 'D:/Final program/processor/processor.runs/synth_1/superscalar.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 700.961 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.891 . Memory (MB): peak = 700.961 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 08 16:19:08 2017...

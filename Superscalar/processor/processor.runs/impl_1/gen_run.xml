@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1510138167">
+  <File Type="PWROPT-DRC" Name="superscalar_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="superscalar_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="superscalar_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="superscalar_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="superscalar.tcl"/>
+  <File Type="OPT-HWDEF" Name="superscalar.hwdef"/>
+  <File Type="RDI-RDI" Name="superscalar.vdi"/>
+  <File Type="OPT-DCP" Name="superscalar_opt.dcp"/>
+  <File Type="OPT-DRC" Name="superscalar_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="superscalar_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="superscalar_pwropt.dcp"/>
+  <File Type="PWROPT-TIMING" Name="superscalar_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="superscalar_placed.dcp"/>
+  <File Type="PLACE-IO" Name="superscalar_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="superscalar_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="superscalar_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="superscalar_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="superscalar_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="superscalar_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="superscalar_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="superscalar_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="superscalar_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="superscalar_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="superscalar_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="superscalar_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="superscalar_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="superscalar_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="superscalar_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="superscalar_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="superscalar_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="superscalar_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="superscalar.bin"/>
+  <File Type="ROUTE-DRC-RPX" Name="superscalar_drc_routed.rpx"/>
+  <File Type="BG-DRC" Name="superscalar.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="superscalar_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="superscalar.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="superscalar_methodology_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="superscalar.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="superscalar_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="superscalar_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="superscalar_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="superscalar_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="superscalar_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="superscalar_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="superscalar_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="superscalar_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="superscalar_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="superscalar_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="superscalar_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="superscalar_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="superscalar_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="superscalar_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="superscalar_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="superscalar.bit"/>
+  <File Type="BITSTR-RBT" Name="superscalar.rbt"/>
+  <File Type="BITSTR-NKY" Name="superscalar.nky"/>
+  <File Type="BITSTR-BMM" Name="superscalar_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="superscalar.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="superscalar.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../reg_file/reg_file.srcs/sources_1/new/reg_file.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../control_uni/control_uni.srcs/sources_1/new/control_unit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../ALUCU1/ALUCU1.srcs/sources_1/new/ALU_CU.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../ALU1/ALU1.srcs/sources_1/new/Alu.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../PC1/PC1.srcs/sources_1/new/program_counter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/combine.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Data Memory/data.srcs/sources_1/new/data.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/superscalar.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/instr_mem.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="superscalar"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
